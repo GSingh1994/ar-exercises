@@ -5,7 +5,9 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
-store1 = Store.find_by(id: 1)
-store2 = Store.find_by(id: 2)
+@store1 = Store.find_by(id: 1)
+@store2 = Store.find_by(id: 2)
 
-store1.name = "new_name"
+@store1.name = "new_name"
+
+# store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
